@@ -14,7 +14,7 @@ export class CdkPipelineStack extends Stack {
                 input: CodePipelineSource.gitHub(Params.GITHUB_REPO, Params.BRANCH_NAME, {
                     authentication: SecretValue.secretsManager(Params.GITHUB_TOKEN)
                 }),
-                commands: ['npm ci', 'npm run build', 'npx cdk synth']
+                commands: ['npm install', 'npm run build', 'npx cdk synth']
             })
         });
 
