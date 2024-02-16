@@ -34,7 +34,7 @@ export class EcsStack extends Stack {
                 containerPort: 8094,
             },
             runtimePlatform: {
-                cpuArchitecture: CpuArchitecture.ARM64,
+                cpuArchitecture: CpuArchitecture.X86_64,
                 operatingSystemFamily: OperatingSystemFamily.LINUX
             }
         })
