@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 node:18
-WORKDIR /usr/src/app
+WORKDIR /backend
 COPY package*.json ./
 RUN npm install
-COPY . . 
+COPY backend/ . 
 EXPOSE 8094
 CMD ["node", "index.js"]
